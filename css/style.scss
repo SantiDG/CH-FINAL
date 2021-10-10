@@ -1,0 +1,759 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*base*/
+/*Colores*/
+@keyframes Opacity {
+  0% {
+    opacity: 0%;
+  }
+  20% {
+    opacity: 20%;
+  }
+  40% {
+    opacity: 40%;
+  }
+  60% {
+    opacity: 60%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/*Media Querys*/
+@media only screen and (min-width: 961px) {
+  body header .ham-container {
+    display: none;
+  }
+  body header .ham-container .ham-nav {
+    display: none;
+  }
+  body header .ham-container .ham-nav .navbar, body header .ham-container .ham-nav .navbar-expand-lg, body header .ham-container .ham-nav .navbar-light {
+    display: none;
+  }
+  body .all-but-header .redes-container-ft {
+    display: none;
+  }
+  body .all-but-header .redes-container-ft .redes-list-ft {
+    display: none;
+  }
+  body .all-but-header .redes-container-ft .redes-list-ft .redes-item-ft {
+    display: none;
+  }
+  body .all-but-header .redes-container-ft .redes-list-ft .redes-item-ft a {
+    display: none;
+  }
+  body .all-but-header .redes-container-ft .redes-list-ft .redes-item-ft a .redes-logo-ft {
+    display: none;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    font-size: 60%;
+  }
+
+  header .logo-container {
+    width: 0;
+  }
+  header .logo-container .logo {
+    display: none;
+    width: 0;
+  }
+  header .nav-container {
+    display: none;
+  }
+  header .nav-container .nav-table {
+    display: none;
+  }
+  header .redes-container {
+    display: none;
+  }
+  header .redes-container .redes-list {
+    display: none;
+  }
+  header .redes-container .redes-list .redes-item {
+    display: none;
+  }
+  header .redes-container .redes-list .redes-item a {
+    display: none;
+  }
+  header .redes-container .redes-list .redes-item a .redes-logo {
+    display: none;
+  }
+
+  .ham-container {
+    width: 100%;
+  }
+  .ham-container .ham-nav .navbar {
+    padding: 0;
+    background-color: #F2F2F2;
+  }
+  .ham-container .ham-nav .navbar .container-fluid {
+    padding: 0;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-brand .logo {
+    padding: 1.5rem 0 1.5rem 1.5rem;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-toggler {
+    margin-right: 1.5rem;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-collapse .navbar-nav {
+    text-align: center;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #221F1C;
+  }
+
+  body .all-but-header .banner-container .frase-banner {
+    display: inline;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 6vw;
+  }
+  body .all-but-header .multi-container {
+    display: flex;
+    flex-direction: column;
+  }
+  body .all-but-header .multi-container .variante-container .variante-titulo {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  body .all-but-header .multi-container .variante-container .texto-desc-1 {
+    color: #221F1C;
+    text-align: center;
+  }
+  body .all-but-header .multi-container .variante-container .texto-desc-2 {
+    color: #F2F2F2;
+    text-align: center;
+  }
+  body .all-but-header .valores-container {
+    display: block;
+  }
+  body .all-but-header .valores-container .titulo-valores {
+    display: flex;
+  }
+  body .all-but-header .valores-container .valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .all-but-header .valores-container .valores .valor {
+    width: 40%;
+    margin: 2.5vh 2.5vw;
+  }
+  body .all-but-header .valores-container .valores .valor .img-valor {
+    max-width: 25%;
+  }
+  body .all-but-header .nosotros-container {
+    display: block;
+  }
+  body .all-but-header .footer-container {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  body .all-but-header .footer-container .noticias-container {
+    width: 100%;
+    align-items: center;
+  }
+  body .all-but-header .footer-container .noticias-container .noticias-titulo {
+    padding: 2rem 0;
+    margin: 0;
+  }
+  body .all-but-header .footer-container .noticias-container .noticias-form {
+    padding: 0;
+  }
+  body .all-but-header .footer-container .noticias-container .noticias-parrafo {
+    width: 100%;
+    padding: 2rem 5rem 1rem 5rem;
+    text-align: center;
+    margin: 0;
+  }
+  body .all-but-header .footer-container .iso-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  body .all-but-header .footer-container .iso-container .iso {
+    margin: 1.5rem;
+  }
+  body .all-but-header .footer-container .redes-container-ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft .redes-item-ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft .redes-item-ft a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft .redes-item-ft a .redes-logo-ft {
+    display: flex;
+    z-index: 5;
+    max-width: 2.5rem;
+    margin: 0 1rem 0 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    font-size: 60%;
+  }
+
+  header .logo-container {
+    width: 0;
+  }
+  header .logo-container .logo {
+    display: none;
+    width: 0;
+  }
+  header .nav-container {
+    display: none;
+  }
+  header .nav-container .nav-table {
+    display: none;
+  }
+  header .redes-container {
+    display: none;
+  }
+  header .redes-container .redes-list {
+    display: none;
+  }
+  header .redes-container .redes-list .redes-item {
+    display: none;
+  }
+  header .redes-container .redes-list .redes-item a {
+    display: none;
+  }
+  header .redes-container .redes-list .redes-item a .redes-logo {
+    display: none;
+  }
+
+  .ham-container {
+    width: 100%;
+  }
+  .ham-container .ham-nav .navbar {
+    padding: 0;
+    background-color: #F2F2F2;
+  }
+  .ham-container .ham-nav .navbar .container-fluid {
+    padding: 0;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-brand .logo {
+    padding: 1.5rem 0 1.5rem 1.5rem;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-toggler {
+    margin-right: 1.5rem;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-collapse .navbar-nav {
+    text-align: center;
+  }
+  .ham-container .ham-nav .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #221F1C;
+  }
+
+  body .all-but-header .banner-container .frase-banner {
+    display: inline;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 6vw;
+  }
+  body .all-but-header .multi-container {
+    display: flex;
+    flex-direction: column;
+  }
+  body .all-but-header .multi-container .variante-container .variante-titulo {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  body .all-but-header .multi-container .variante-container .texto-desc-1 {
+    color: #221F1C;
+    text-align: center;
+  }
+  body .all-but-header .multi-container .variante-container .texto-desc-2 {
+    color: #F2F2F2;
+    text-align: center;
+  }
+  body .all-but-header .valores-container {
+    display: block;
+  }
+  body .all-but-header .valores-container .titulo-valores {
+    display: flex;
+  }
+  body .all-but-header .valores-container .valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .all-but-header .valores-container .valores .valor {
+    width: 40%;
+    margin: 2.5vh 2.5vw;
+  }
+  body .all-but-header .valores-container .valores .valor .img-valor {
+    max-width: 25%;
+  }
+  body .all-but-header .nosotros-container {
+    display: block;
+  }
+  body .all-but-header .footer-container {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  body .all-but-header .footer-container .noticias-container {
+    width: 100%;
+    align-items: center;
+  }
+  body .all-but-header .footer-container .noticias-container .noticias-titulo {
+    padding: 2rem 0;
+    margin: 0;
+  }
+  body .all-but-header .footer-container .noticias-container .noticias-form {
+    padding: 0;
+  }
+  body .all-but-header .footer-container .noticias-container .noticias-parrafo {
+    width: 100%;
+    padding: 2rem 5rem 1rem 5rem;
+    text-align: center;
+    margin: 0;
+  }
+  body .all-but-header .footer-container .iso-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  body .all-but-header .footer-container .iso-container .iso {
+    margin: 1.5rem;
+  }
+  body .all-but-header .footer-container .redes-container-ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft .redes-item-ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft .redes-item-ft a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .all-but-header .footer-container .redes-container-ft .redes-list-ft .redes-item-ft a .redes-logo-ft {
+    display: flex;
+    z-index: 5;
+    max-width: 2.5rem;
+    margin: 0 1rem 0 1rem;
+  }
+}
+/*Componentes*/
+/*Header*/
+header {
+  display: flex;
+  width: 100%;
+  background-color: #F2F2F2;
+  position: fixed;
+  z-index: 80;
+}
+
+/*Logo*/
+.logo-container {
+  display: flex;
+  justify-content: left;
+  width: 25%;
+}
+
+.logo {
+  max-width: 12rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  animation-name: Opacity;
+  animation-duration: 0.8s;
+}
+
+/*Navegador*/
+.nav-container {
+  width: 50%;
+  height: 4rem;
+}
+.nav-container .nav-list {
+  padding: 2rem 0;
+  text-align: center;
+}
+.nav-container .nav-list .list-item {
+  display: inline;
+  text-align: center;
+}
+.nav-container .nav-list .list-item .nav-button {
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #221F1C;
+}
+.nav-container .nav-list .list-item .nav-button:hover {
+  color: #F2F2F2;
+  background-color: #701F21;
+  border-radius: 0.5rem;
+}
+
+/*Redes*/
+.redes-container {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  width: 25%;
+}
+.redes-container .redes-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.redes-container .redes-list .redes-item {
+  display: flex;
+}
+.redes-container .redes-list .redes-item .redes-logo {
+  position: relative;
+  top: 1.6rem;
+  align-items: center;
+  display: flex;
+  z-index: 5;
+  max-width: 2.5rem;
+  margin: 0 1rem 0 1rem;
+}
+.redes-container .redes-list .redes-item .redes-logo:hover {
+  transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+/* Ham Nav */
+.all-but-header {
+  position: relative;
+  top: 5rem;
+}
+.all-but-header .banner-container {
+  position: relative;
+  text-align: center;
+  color: #F2F2F2;
+  width: 100%;
+  align-items: center;
+}
+.all-but-header .banner-container .frase-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.all-but-header .banner-container .imagen-banner {
+  max-width: 100%;
+}
+
+.productos-h2-c {
+  display: block;
+  text-align: center;
+}
+.productos-h2-c .productos-h2 {
+  padding: 3rem 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  color: #221F1C;
+  background-color: #F2F2F2;
+}
+
+.multi-titulo-c {
+  display: block;
+  text-align: center;
+}
+.multi-titulo-c .multi-titulo {
+  padding: 1.5rem 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #F2F2F2;
+  background-color: #701F21;
+}
+
+.multi-container {
+  display: flex;
+}
+.multi-container .variante-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 2rem 0;
+}
+.multi-container .variante-container .variante-titulo {
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+.multi-container .variante-container .h4-1 {
+  color: #F2F2F2;
+}
+.multi-container .variante-container .h4-2 {
+  color: #221F1C;
+}
+.multi-container .variante-container .img-container .img-variante {
+  max-width: 100%;
+  padding: 0 3rem;
+}
+.multi-container .variante-container .collapse-container {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+.multi-container .variante-container .collapse-container .btn {
+  width: 6rem;
+}
+.multi-container .variante-container .collapse-container .collapse .card .variante-desc, .multi-container .variante-container .collapse-container .collapse .card-body .variante-desc {
+  display: flex;
+  padding: 0 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.multi-container .variante-container .collapse-container .collapse .card .texto-desc-1, .multi-container .variante-container .collapse-container .collapse .card-body .texto-desc-1 {
+  color: #221F1C;
+  text-align: left;
+}
+.multi-container .variante-container .collapse-container .collapse .card .texto-desc-2, .multi-container .variante-container .collapse-container .collapse .card-body .texto-desc-2 {
+  color: #F2F2F2;
+  text-align: right;
+}
+.multi-container .variante-1 {
+  background-image: url(../Images/Productos/fitz-roy-final.png);
+  background-color: #221F1C;
+  background-size: cover;
+}
+.multi-container .variante-2 {
+  background-image: url(../Images/Productos/siete-lagos-final.png);
+  background-color: #F2F2F2;
+  background-size: cover;
+}
+
+/*Valores*/
+.valores-container {
+  display: block;
+}
+.valores-container .titulo-valores {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 0 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #F2F2F2;
+  background-color: #F2F2F2;
+}
+.valores-container .valores {
+  display: flex;
+  padding: 4rem 0 6rem 0;
+  background-color: #F2F2F2;
+}
+.valores-container .valores .valor {
+  width: 30%;
+  background-color: #701F21;
+  border-radius: 3vw;
+  padding: 1rem;
+  margin: 0 3rem;
+  text-align: center;
+}
+.valores-container .valores .valor .img-valor {
+  padding: 0.3rem 0;
+}
+.valores-container .valores .valor .titulo-valor {
+  padding: 0.5rem 0;
+  color: #F2F2F2;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #F2F2F2;
+}
+.valores-container .valores .valor .desc-valor {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #F2F2F2;
+}
+
+.nosotros-container {
+  display: flex;
+}
+.nosotros-container .img-container {
+  display: flex;
+}
+.nosotros-container .img-container .imagen-grupo {
+  max-width: 100%;
+}
+.nosotros-container .text-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+.nosotros-container .text-container .nosotros-text {
+  padding: 10%;
+}
+.nosotros-container .text-container .nosotros-text .h3-nosotros {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #221F1C;
+}
+.nosotros-container .text-container .nosotros-text .h5-nosotros {
+  padding: 2rem 0 0 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #221F1C;
+}
+.nosotros-container .text-container .nosotros-text .p-nosotros {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #221F1C;
+}
+
+.contacto-container {
+  display: block;
+  padding: 4rem 0;
+  background-size: 100%;
+  background-position: top;
+}
+.contacto-container .bk-img {
+  position: fixed;
+  bottom: 0;
+  z-index: -70;
+}
+.contacto-container .titulo-contacto {
+  padding: 0 0 2rem 0;
+  text-align: center;
+}
+.contacto-container .titulo-contacto .contacto-h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #221F1C;
+}
+.contacto-container .button-container {
+  display: block;
+  text-align: center;
+}
+.contacto-container .button-container .btn-default {
+  background-color: #701F21;
+  color: #F2F2F2;
+  border-color: #701F21;
+}
+.contacto-container .button-container .btn-default:hover, .contacto-container .button-container .btn-default:focus, .contacto-container .button-container .btn-default:active {
+  background-color: #701F21;
+  color: #FFF;
+  border-color: #701F21;
+}
+.contacto-container .button-container .mb-3 {
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  background-color: #221F1C;
+}
+.footer-container .noticias-container {
+  width: 50%;
+}
+.footer-container .noticias-container .noticias-titulo {
+  padding: 0 0 0 1.5rem;
+  margin: 1.5rem 0;
+}
+.footer-container .noticias-container .noticias-titulo .h3-noticias {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #F2F2F2;
+}
+.footer-container .noticias-container .noticias-form {
+  padding: 0 0 0 1.2rem;
+}
+.footer-container .noticias-container .noticias-form .noticias-input {
+  width: 70%;
+}
+.footer-container .noticias-container .noticias-parrafo {
+  color: #F2F2F2;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  width: 70%;
+}
+.footer-container .iso-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.footer-container .iso-container .iso {
+  max-width: 8rem;
+  margin: 3rem;
+}
+
+/*# sourceMappingURL=style.scss.map */

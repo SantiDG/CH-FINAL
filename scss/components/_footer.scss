@@ -1,0 +1,93 @@
+
+
+.footer-container {
+    display: flex;
+    background-color:$negro-rdm ;
+
+    .noticias-container {
+        width: 50%;
+
+        .noticias-titulo {
+            padding: 0 0 0 1.5rem;
+            margin: 1.5rem 0 0 0;
+
+            .h3-noticias {
+                margin: 0;
+                @include oswald-font (300, 2rem);
+                color: $blanco-rdm;
+            }
+        }
+
+        .noticias-form {
+            padding:0 0 0 1.2rem;
+
+            .noticias-label {
+                color: $blanco-rdm;
+                @include opensans-font (400, 1rem);
+                color: $blanco-rdm;
+            }
+            
+            .noticias-input {
+                margin: 0 1rem 0 0.5rem;
+                padding: 0.2rem 0 0.2rem 0.5rem;
+                width: 70%;
+                @include opensans-font (300, 0.8rem);
+                color: $negro-rdm;
+            }
+
+            .boton {
+                padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+                border-radius: 3px;
+                letter-spacing: 1px;
+                background-color: $rojo-rdm;
+                color:$blanco-rdm;
+                border: 1.5px solid $rojo-rdm;
+                @include oswald-font (300, 1rem);
+
+        
+                &:hover {
+                    background-color: $blanco-rdm;
+                    color: $rojo-rdm;
+                    border-color: $rojo-rdm;
+                }
+            }
+        }
+
+        .noticias-parrafo {
+            color: $blanco-rdm;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+            width: 70%;
+            @include opensans-font (300, 1rem);
+            color: $blanco-rdm;
+        }
+    }
+
+    .iso-container {
+        display: flex;
+        justify-content: flex-end;
+
+        width: 50%;
+
+
+        .iso {
+            max-width: 8rem;
+            margin: 3rem;
+
+        }
+    }
+}
+
+.foot-note {
+
+    text-align: center;
+    align-items: center;
+    background-color: $blanco-rdm;
+    @include opensans-font (600, 0.7rem);
+    color: $negro-rdm;
+
+    .note {
+        padding: 3px 0 3px 0;
+    }
+
+}

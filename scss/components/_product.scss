@@ -1,0 +1,258 @@
+
+.productos-h2-c {
+    text-align: center;
+
+    .productos-h2 {
+        padding: 3rem 0 ;
+        margin: 0;
+
+        @include oswald-font (400, 2.5rem);
+        color: $negro-rdm;
+        background-color: $blanco-rdm;
+    }
+}
+
+.multi-titulo-c {
+    display: block;
+    text-align: center;
+
+
+    .multi-titulo {
+        padding: 1.5rem 0 ;
+        margin: 0;
+
+        @include oswald-font (400, 2.5rem);
+        color: $blanco-rdm;
+        background-color: $rojo-rdm;
+    }
+}
+
+.multi-container {
+    display: flex;
+
+    .variante-container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 3rem 0 ;
+
+        .variante-titulo {
+            margin: 1rem 0 2rem 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            @include oswald-font (300, 2.2rem);
+        }
+
+        .h4-1 {
+            color: $blanco-rdm;
+        }
+
+        .h4-2 {
+            color: $negro-rdm;
+        }
+
+        .img-container {
+
+            .img-variante {
+                max-width: 100%;
+                padding: 0 3rem;
+            }
+        }
+
+        .collapsing {
+
+            .card {
+                display: flex;
+                background-color: $blanco-rdm;
+
+                .texto-producto {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .variante-desc {
+                        @include opensans-font (600, 1rem);
+                        width: 50%;
+                        padding: 0 0 0 1rem;
+
+                        .texto-desc-1 {
+                            color: $negro-rdm;
+                            text-align: left;
+                        }
+                
+                        .texto-desc-2 {
+                            color: $negro-rdm;
+                            text-align: right;
+                        }
+                    }
+                }
+
+                .variante-info {
+                    width: 50%;
+                    text-align: left;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 4rem 1rem 4rem 2rem ;
+                    margin: 0;
+                    
+
+                    .info-container {
+                        padding:0.5rem 0.5rem 0.5rem 1rem;
+                        margin: 0;
+                        border-left: 5px solid $rojo-rdm;
+
+                    }
+                }
+
+                .btn-info {
+                    background-color: $blanco-rdm;
+                    color:$rojo-rdm;
+                    border: 1.5px solid $rojo-rdm;
+                    @include oswald-font (300, 1rem);
+    
+            
+                    &:hover, &:focus, &:active {
+                        background-color: $rojo-rdm;
+                        color:#FFF;
+                        border-color: $rojo-rdm;
+                        box-shadow:  -1px 1px 5px $blanco-rdm, 1px -1px 5px $blanco-rdm ;
+                    }
+                }
+            }
+        }
+
+        .collapse-container {
+            text-align: center;
+            padding: 2rem 0 0 0;
+
+            .btn-primary {
+                width: 6rem;
+                background-color: $rojo-rdm;
+                color:$blanco-rdm;
+                border-color: $rojo-rdm;
+                @include oswald-font (300, 1rem);
+
+        
+                &:hover, &:focus, &:active {
+                    background-color: $rojo-rdm;
+                    color:#FFF;
+                    border-color: $rojo-rdm;
+                    box-shadow:  -1px 1px 5px $blanco-rdm, 1px -1px 5px $blanco-rdm ;
+                }
+
+            }
+
+            
+
+            .collapse {
+
+                .card {
+                    display: flex;
+                    background-color: $blanco-rdm;
+
+                    .texto-producto {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .variante-desc {
+                            @include opensans-font (600, 1rem);
+                            width: 50%;
+                            padding: 0 0 0 1rem;
+    
+                            .texto-desc-1 {
+                                color: $negro-rdm;
+                                text-align: left;
+                            }
+                    
+                            .texto-desc-2 {
+                                color: $negro-rdm;
+                                text-align: right;
+                            }
+                        }
+                    }
+
+
+
+                    .variante-info {
+                        width: 50%;
+                        text-align: left;
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 4rem 1rem 4rem 2rem ;
+                        margin: 0;
+                        
+
+                        .info-container {
+                            padding:0.5rem 0.5rem 0.5rem 1rem;
+                            margin: 0;
+                            border-left: 5px solid $rojo-rdm;
+
+                            .info {
+                            }
+                        }
+
+                    }
+
+                    .btn-info {
+                        background-color: $blanco-rdm;
+                        color:$rojo-rdm;
+                        border: 1.5px solid $rojo-rdm;
+                        @include oswald-font (300, 1rem);
+        
+                
+                        &:hover, &:focus, &:active {
+                            background-color: $rojo-rdm;
+                            color:#FFF;
+                            border-color: $rojo-rdm;
+                            box-shadow:  -1px 1px 5px $blanco-rdm, 1px -1px 5px $blanco-rdm ;
+                        }
+
+                        .modal {
+
+                            .modal-content {
+
+                                .modal-header {
+                                    background-color: $negro-rdm;
+
+                                }
+
+                                .modal-body {
+
+                                }
+
+                                .modal-footer {
+
+                                }
+                            }
+                        }
+                    }
+            
+
+                }
+
+            }
+
+        }
+
+    }
+    .variante-1 {
+        background-image: url(../Images/Productos/bariloche3.jpg);
+        background-color: $negro-rdm;
+        background-size: cover;
+    }
+
+    .variante-2 {
+        background-image: url(../Images/Productos/fitzroy3.jpg);
+        background-color: $blanco-rdm;
+        background-size: cover;
+    }
+
+}
+
+.div-product {
+    height: 2rem;
+    background-color: $blanco-rdm;
+}

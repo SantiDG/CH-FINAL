@@ -1,0 +1,63 @@
+
+
+@media only screen and (min-width:961px) {
+
+    body {
+
+        .anchor {
+            display: block;
+            height: 89.86px; 
+            margin-top: -89.86px; 
+            visibility: hidden;
+        }
+
+        header {
+
+            .ham-container {
+                display: none;
+
+                .ham-nav {
+                    display: none;
+
+                    .navbar, .navbar-expand-lg, .navbar-light {
+                        display: none;
+                    }
+                }
+            
+            }
+
+        }
+
+        .all-but-header {
+
+            .redes-container-ft {
+                display: none;
+
+                .redes-list-ft {
+                    display: none;
+
+                    .redes-item-ft {
+                        display: none;
+
+                        a {
+                        display: none;
+
+                        .redes-logo-ft {
+                            display: none;
+
+                            }
+                        
+                        }
+                    }
+                
+                }
+            }
+
+        }
+
+    }
+    
+
+
+
+}

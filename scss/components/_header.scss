@@ -1,0 +1,97 @@
+
+/*Header*/
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: $blanco-rdm;
+    position: fixed;
+    z-index: 80;
+    box-shadow: 0 5px 10px rgba(34, 31, 28, 0.2);
+    border-bottom: 1px solid $blanco-rdm;
+    
+
+}
+
+/*Logo*/
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    width: 25%;
+}
+
+.logo {
+    max-width: 12rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    animation-name: Opacity;
+    animation-duration: 0.8s;
+}
+
+/*Navegador*/
+
+.nav-container {
+    width: 50%;
+    height: 4rem;
+
+    .nav-list {
+        padding: 2rem 0;
+        text-align: center;
+        
+        .list-item {
+            display: inline;
+
+            .nav-button {
+                text-decoration: none;
+                padding: 0.5rem;
+                margin: 0 0.5rem;
+                @include oswald-font(400, 1.2rem);
+                color: $negro-rdm; 
+
+                &:hover {   
+                    color: $blanco-rdm;
+                    background-color: $rojo-rdm;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+/*Redes*/
+
+.redes-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    
+    .redes-list {
+        display: flex;
+
+        .redes-item {
+            display: flex;
+
+            .redes-logo {
+                position: relative;
+                top: 1.6rem;
+                align-items: center;
+                display: flex;
+                z-index: 5;
+                max-width: 2.5rem;
+                margin: 0 1rem 0 1rem;
+
+                &:hover {
+                    @include trans-scale (1.2);
+                }
+            }
+        }
+    }
+}
+
+/* Ham Nav */
+
+
+
+
