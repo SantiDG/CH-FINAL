@@ -144,7 +144,7 @@ const AplicarDesc = (nombre, codigo) => {
 
     let valor = descuento.valor
 
-    return (precio*valor)
+    return (`El precio con descuento seria de ${precio*valor}`)
 
 }
 

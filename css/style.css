@@ -823,6 +823,17 @@ header {
 .multi-container .variante-container .collapse-container .collapse .card .btn-info .modal .modal-content .modal-header {
   background-color: #221F1C;
 }
+.multi-container .variante-container .variante-disp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.multi-container .variante-container .variante-disp .text-disp {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
 .multi-container .variante-1 {
   background-image: url(../Images/Productos/bariloche3.jpg);
   background-color: #221F1C;

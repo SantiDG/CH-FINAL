@@ -35,6 +35,7 @@
         flex-direction: column;
         padding: 2rem 0 3rem 0 ;
 
+
         .variante-titulo {
             margin: 1rem 0 2rem 0;
             display: flex;
@@ -234,6 +235,22 @@
                 }
 
             }
+
+        }
+
+        
+        .variante-disp {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .text-disp {
+                @include opensans-font (500, 1rem);
+                
+            }
+
 
         }
 
