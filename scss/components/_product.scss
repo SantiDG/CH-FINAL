@@ -33,7 +33,7 @@
     .variante-container {
         display: flex;
         flex-direction: column;
-        padding: 2rem 0 3rem 0 ;
+        padding: 2rem 0 0 0 ;
 
 
         .variante-titulo {
@@ -241,13 +241,28 @@
         
         .variante-disp {
 
+
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
 
-            .text-disp {
-                @include opensans-font (500, 1rem);
+            padding: 1rem 0;
+
+
+
+            .text-disp p {
+                flex-direction: column;
+                align-items: center;
+                width: 6rem;
+                
+                padding: 0.5rem;
+                margin: 0;
+
+                background-color: $blanco-rdm;
+                border-radius: 3px;
+    
+                @include oswald-font (700, 1rem);
                 
             }
 

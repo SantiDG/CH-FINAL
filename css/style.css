@@ -676,7 +676,7 @@ header {
 .multi-container .variante-container {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0 3rem 0;
+  padding: 2rem 0 0 0;
 }
 .multi-container .variante-container .variante-titulo {
   margin: 1rem 0 2rem 0;
@@ -828,10 +828,18 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 1rem 0;
 }
-.multi-container .variante-container .variante-disp .text-disp {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
+.multi-container .variante-container .variante-disp .text-disp p {
+  flex-direction: column;
+  align-items: center;
+  width: 6rem;
+  padding: 0.5rem;
+  margin: 0;
+  background-color: #F2F2F2;
+  border-radius: 3px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   font-size: 1rem;
 }
 .multi-container .variante-1 {
@@ -951,6 +959,18 @@ header {
   */
   background-color: rgba(34, 31, 28, 0.4);
   box-shadow: inset 0 15px 20px rgba(34, 31, 28, 0.4), inset 0 -15px 20px rgba(34, 31, 28, 0.4);
+}
+.contacto-container .modal-title {
+  color: #221F1C;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.contacto-container .col-form-label {
+  color: #221F1C;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 .contacto-container .bk-img {
   position: fixed;
