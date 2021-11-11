@@ -1,0 +1,42 @@
+[
+    {
+        "productId": 1,
+        "id": 1,
+        "nombre": "Multipresa Asimetrica",
+        "desc": "Multipresa asimetrica para entrenamiento y resistencia indoor",
+        "precio": 7000
+    },
+
+    {
+        "productId": 2,
+        "id": 2,
+        "nombre": "Multipresa Simetrica",
+        "desc": "Multipresa simetrica para entrenamiento y resistencia indoor",
+        "precio": 6500
+    },
+
+    {
+        "productId": 3,
+        "id": 3,
+        "nombre": "Accesorio1",
+        "desc": "Accesorio para escalada deportiva" ,
+        "precio": 3200      
+    },
+
+    {
+        "productId": 4,
+        "id": 4,
+        "nombre": "Accesorio2",
+        "desc": "Accesorio diferente para escalada deportiva" ,
+        "precio": 2600
+    },
+
+    {
+        "productId": 4,
+        "id": 4,
+        "nombre": "Accesorio2",
+        "desc": "Accesorio diferente para escalada deportiva" ,
+        "precio": 2600
+    }
+
+]

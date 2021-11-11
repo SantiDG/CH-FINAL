@@ -243,7 +243,8 @@
 
 
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
             text-align: center;
 
@@ -252,7 +253,8 @@
 
 
             .text-disp p {
-                flex-direction: column;
+                display: flex;
+                justify-content: center;
                 align-items: center;
                 width: 6rem;
                 
@@ -262,9 +264,44 @@
                 background-color: $blanco-rdm;
                 border-radius: 3px;
     
-                @include oswald-font (700, 1rem);
+                @include oswald-font (600, 1rem);
                 
             }
+
+            .boton-compra {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 40px;
+                
+                
+                padding: 0.5rem;
+                margin: 0 0 0 1rem;
+
+                background-color: $blanco-rdm;
+                border-radius: 3px;
+    
+                @include opensans-font (600, 0.9rem);
+
+
+                
+
+
+            }
+
+        }
+
+        
+        .comprar-container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            padding: 1rem 0;
 
 
         }

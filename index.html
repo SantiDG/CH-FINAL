@@ -57,6 +57,7 @@
                     <li class="list-item" alt="Valores"><a class="nav-button" href="#valores">Valores</a></li> 
                     <li class="list-item" alt="Nosotros"><a class="nav-button" href="#nosotros">Nosotros</a></li> 
                     <li class="list-item" alt="Contacto"><a class="nav-button" href="#contacto">Contacto</a></li> 
+                    <li class="list-item" alt="Contacto"><a class="nav-button" type="button" data-bs-toggle="modal" data-bs-target="#modal-carrito" >Compras</a></li> 
                 </ul>
             </div>
         </nav>
@@ -118,6 +119,8 @@
 
         </section>
 
+        
+
     </header>
 
     <!--All but Header-->
@@ -133,6 +136,30 @@
             </h1>
 
         </section>
+
+        <!-- Modal Compras -->
+
+        
+        <div class="modal fade" id="modal-carrito" tabindex="-1" aria-labelledby="ModalCarrito" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="list-group" id="lista-compras">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!--Productos-->
 
@@ -237,8 +264,16 @@
                 <div class="variante-disp">
 
                     <div class="text-disp" id="disp-1"></div>
+
+                    <button class="btn boton-compra" id="prod1">Agregar al carrito</button>
     
-                    </div>
+                </div>
+
+
+
+
+    
+
 
             </div>
 
@@ -337,7 +372,10 @@
 
                 <div class="text-disp" id="disp-2"></div>
 
+                <button class="btn boton-compra" id="prod2">Agregar al carrito</button>
+
                 </div>
+
             </div>
 
         </section>
@@ -566,10 +604,13 @@
 
     </section>
 
-<!--JAVASCRIPT-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
 
+<!--JAVASCRIPT
 
-<script src="js/cookies.js"></script>
+<script src="js/cookies.js"></script>-->
+
+<script src="js/compras.js"></script>
 
 <script src="js/objects.js"></script>
 
